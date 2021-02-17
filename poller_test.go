@@ -25,7 +25,7 @@ func (p *testPoller) Poll(b *Bot, updates chan Update, stop chan struct{}) {
 			updates <- upd
 		case <-stop:
 			return
-		default:
+
 		}
 	}
 }
